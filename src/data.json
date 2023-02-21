@@ -1,0 +1,35 @@
+{
+    "introDone":false,
+    "tasks": [
+        {
+            "title": "Do math homework",
+            "description": "Do chapter 2 to 5 for next week",
+            "category": false,
+            "priority": 1,
+            "time": false,
+            "completed": true,
+            "id":0
+        },
+        {
+            "title": "Tack out dogs",
+            "description": "Do chapter 2 to 5 for next week",
+            "category": 9,
+            "priority": 1,
+            "time": "Today At 18:20",
+            "completed": true,
+            "id":1
+        }
+    ],
+    "categories": [
+        {"primary": "21A300", "secondary": "CCFF80", "name": "Grocery", "id":0},
+        {"primary": "A31D00", "secondary": "FF9680", "name": "Work", "id":1},
+        {"primary": "00A32F", "secondary": "80FFFF", "name": "Sport", "id":2},
+        {"primary": "00A372", "secondary": "80FFD9", "name": "Design", "id":3},
+        {"primary": "0055A3", "secondary": "809CFF", "name": "University", "id":4},
+        {"primary": "A30089", "secondary": "FF80EB", "name": "Social", "id":5},
+        {"primary": "A000A3", "secondary": "FC80FF", "name": "Music", "id":6},
+        {"primary": "00A3A3", "secondary": "80FFA3", "name": "Health", "id":7},
+        {"primary": "0069A3", "secondary": "80D1FF", "name": "Movie", "id":8},
+        {"primary": "A36200", "secondary": "FFCC80", "name": "Home", "id":9}
+    ]
+}
