@@ -154,7 +154,7 @@ export default function App() {
             </div>
           </div>
           <div onClick={() => setSection(<Date setSection={setSection} />)}  className='flex gap-2 items-center'>
-            <img className='w-6 h-6' src="images/task/time.svg" alt="Ti" />
+            <img className='w-6 h-6' src="images/task/timer.svg" alt="Ti" />
             <span className='flex-auto'>Task Time:</span>
             <div className='px-4 py-2 leading-[21px] bg-[#ffffff4f] rounded-[4px]'>{task.time?task.time:'No set time'}</div>
           </div>
