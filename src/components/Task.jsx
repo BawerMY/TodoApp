@@ -11,7 +11,7 @@ export default function Task(props) {
             </div>
             <div className="absolute bottom-1 text-white right-[10px] flex gap-3">
                 {props.task.category!==false && <div className={'rounded-[4px] py-[7.5px] px-2 flex gap-[5px] bg-[#'+categories[props.task.category].secondary+']'}>
-                    <img className='w-[14px]' src={'images/categories/'+props.task.category+'.svg'} alt='' />
+                    <img className='w-[14px]' src={'images/categories/'+props.task.category+'.svg'} alt=' ' />
                     <span className='leading-[21px] text-[12px]'>{categories[props.task.category].name}</span>
                 </div>}
                 {props.task.priority!==false && <div className={'rounded-[4px] py-[7.5px] px-2 flex gap-[5px] bg-transparent border-[1px] border-[#8687E7]'}>
