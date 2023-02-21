@@ -335,7 +335,7 @@ export default function App() {
           <div className='mb-4 mt-5'>
             <label htmlFor='categoryName' className='text-base'>Category Name:</label>
           </div>
-          <input required={true} onChange={function (e){category.name=e.target.value.slice(1)}} placeholder='Category Name' className='bg-[#1D1D1D] rounded-[4px] border-[0.8px] border-[#979797] p-3 w-full' type="text" name="categoryName" id="categoryName" />
+          <input required={true} onChange={function (e){category.name=e.target.value}} placeholder='Category Name' className='bg-[#1D1D1D] rounded-[4px] border-[0.8px] border-[#979797] p-3 w-full' type="text" name="categoryName" id="categoryName" />
           <div className='mb-4 mt-5'>
             <label htmlFor='categoryName' className='text-base'>Category Icon:</label>
           </div>
