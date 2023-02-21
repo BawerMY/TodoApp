@@ -1,3 +1,3 @@
 # todo
-https://bawermy.github.io/Todo/
+https://bawermy.github.io/TodoApp/
 Todo list app whit time, category and priority proporties
