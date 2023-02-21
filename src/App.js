@@ -5,7 +5,7 @@ import Task from './components/Task';
 
 export default function App() {
   const data = require('./data.json')
-  const [page, setPage] = useState(<App />)
+  const [page, setPage] = useState(<Intro />)
   return (
     <div className="text-[#ffffffd0] bg-[#121212] w-screen max-w-[460px] h-screen">
       {page}
@@ -72,7 +72,7 @@ export default function App() {
       completed: false,
       id:data.tasks.length
   }
-    const [page, setPage] = useState(<TaskPage id={1} />)
+    const [page, setPage] = useState(<App />)
     return (
       <>
         {page}
