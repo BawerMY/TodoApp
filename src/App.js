@@ -302,7 +302,7 @@ export default function App() {
                   <span className='text-[14px] font-medium'>{data.categories[category.id].name}</span>
                 </div>)
               }()}
-              <div onClick={() => setSection(<CreateCategory />)} className='flex flex-col gap-[5px] items-center justify-center' >
+              <div onClick={() => setSection(<CreateCategory setSection={setSection} />)} className='flex flex-col gap-[5px] items-center justify-center' >
                   <div className='w-[92px] h-[92px] max-sm:w-[calc((100vw-184px)/3)] max-sm:h-[calc((100vw-184px)/3)] justify-center gap-[5px] rounded-[4px] flex flex-col items-center bg-[#80FFD1]' >
                     <img className='w-[46px] h-[46px] max-sm:w-[calc((100vw-184px)/6)] max-sm:h-[calc((100vw-184px)/6)]' src="images/categories/add.svg" alt='+' />
                   </div>
@@ -350,8 +350,8 @@ export default function App() {
             </label>
           </div>
           <div className='fixed flex gap-5 bottom-[47px]'>
-            <button onClick={() => setSection(<Tag />)} className='text-base py-3 w-[196px] max-sm:w-[calc((100vw-68px)/2)] bg-transparent rounded-[4px] text-[#8687E7]'>Cancel</button>
-            <button onClick={() => {data.categories.push(category); setSection(<Tag />)}} className='text-base py-3 w-[196px] max-sm:w-[calc((100vw-68px)/2)] bg-[#8687E7] rounded-[4px] text-white'>Save</button>
+            <button onClick={() => setSection(<Tag setSection={setSection} />)} className='text-base py-3 w-[196px] max-sm:w-[calc((100vw-68px)/2)] bg-transparent rounded-[4px] text-[#8687E7]'>Cancel</button>
+            <button onClick={() => {data.categories.push(category); setSection(<Tag setSection={setSection} />)}} className='text-base py-3 w-[196px] max-sm:w-[calc((100vw-68px)/2)] bg-[#8687E7] rounded-[4px] text-white'>Save</button>
           </div>
         </div>
       )
