@@ -44,7 +44,7 @@ export default function App() {
           </div>
           <h1 className='text-[2rem] font-bold mb-[42px]'>{data.title}</h1>
           <p className='text-base text-center mx-[38px]'>{data.description}</p>
-          <div className='fixed bottom-0 flex justify-between items-center w-full px-6 mb-[50px]'>
+          <div className='fixed bottom-0 flex justify-between items-center w-screen max-w-[460px] px-6 mb-[50px]'>
             <a onClick={() => setStep(step-1)} className='text-base'>BACK</a>
             <Button onClick={() => setStep(step+1)} text={data.btn} />
           </div>
@@ -72,7 +72,7 @@ export default function App() {
       completed: false,
       id:data.tasks.length
   }
-    const [page, setPage] = useState(<App />)
+    const [page, setPage] = useState(<Index />)
     return (
       <>
         {page}
@@ -150,7 +150,7 @@ export default function App() {
                 <h4 className='text-[#AFAFAF]'>{task.description}</h4>
             </div>
             <div onClick={() => setSection(<EditNameDesc setSection={setSection} />)} className='w-12 h-12 flex justify-center items-center'>
-              <img className='w-6 h-6' src="images/task/close.svg" alt="edit" />
+              <img className='w-6 h-6' src="images/task/edit.svg" alt="edit" />
             </div>
           </div>
           <div onClick={() => setSection(<Date setSection={setSection} />)}  className='flex gap-2 items-center'>
