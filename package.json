@@ -1,6 +1,6 @@
 {
   "name": "todo",
-  "homepage": "https://bawermy.github.io/Todo",
+  "homepage": "https://bawermy.github.io/TodoApp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
